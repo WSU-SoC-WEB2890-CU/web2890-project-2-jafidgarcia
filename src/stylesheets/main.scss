@@ -40,8 +40,8 @@ $grid-breakpoints: (
     }
 }
 
-
-// testing
+/////////////////////////////////////////
+// full screen drop down hamburger menu
 @media (max-width: 992px) {
     .navbar-collapse {
       position: fixed;
@@ -61,7 +61,7 @@ $grid-breakpoints: (
       text-align: center;
     }
   }
-  
+/////////////////////////////////////////
 
 
 
@@ -91,18 +91,15 @@ $grid-breakpoints: (
   }
 
 
-//   .jumbotron{
+// .jumboMessage{
 //     position: relative;
-//     z-index:-101;
-//   }
-  
-//   #video-background { 
-//     position: fixed;
-//       top: 0;
-//       right: 0;
-//       bottom: 0;
-//       left: 0;
-//       overflow: hidden;
-//       z-index: -100;
-//       width:100%;
-//   }
+//     padding-top: -500px;
+// }
+
+/////////////////////////////////////////
+// aboutUs Section
+#aboutUs{
+    background-image: url(../images/temp_img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
