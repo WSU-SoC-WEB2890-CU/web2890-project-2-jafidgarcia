@@ -36,7 +36,7 @@ html{
   overflow-x: hidden;
 }
 
-.btn{
+.navbtn{
     padding-left: 30px;
     padding-right: 30px;
     border: 3px solid lightgray;
@@ -154,11 +154,29 @@ html{
       width:100%;
   }
 
+  .videoContainer{
+    position: relative;
+    #video-background{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .jumboMessage{
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      color: white;
+      filter: opacity(.5);
+      &:hover{
+        filter: opacity(.9);
+        scale: 1.2;
+      }
+  }
+  }
 
-// .jumboMessage{
-//     position: relative;
-//     padding-top: -500px;
-// }
+
 
 /////////////////////////////////////////
 // aboutUs Section
@@ -182,4 +200,42 @@ html{
     filter: opacity(.7);
     cursor: pointer;
   }
+}
+
+
+
+/////////////////////////////////////////
+// Footer Section
+.footbtn, .sendbtn{
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 3px solid lightgray;
+  border-radius: 100px;
+  padding-top: 5px;
+  margin-left: 10px;
+  &:hover{
+    scale: 1.1;
+  }
+
+//   @include media-breakpoint-down(lg){
+//       font-size: 1.2rem;
+//       text-align: center !important;
+//       padding-left: 100px;
+//       padding-right: 100px;
+//       margin-bottom: 5px;
+//       }
+//   @include media-breakpoint-down(md){
+//       text-align: center !important;
+//       margin-right: auto;
+//       font-size: 1rem;
+//       margin-bottom: 5px;
+//   }
+//   @include media-breakpoint-down(sm){
+//     text-align: center !important;
+//     margin-right: auto;
+//     font-size: 1rem;
+//     margin-bottom: 5px;
+//     padding-left: 15px;
+//     padding-right: 15px;
+// }
 }

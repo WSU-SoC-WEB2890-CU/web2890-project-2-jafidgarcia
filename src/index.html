@@ -29,32 +29,32 @@
         <ul class="navbar-nav mb-2 mb-lg-0 navList">
 
           <li class="nav-item">
-            <button class="btn btn-outline-secondary">
-              <a class="nav-link" aria-current="page" href="#">HOME</a>
+            <button class="btn navbtn btn-outline-secondary">
+              <a class="nav-link" aria-current="page" href="./index.html">HOME</a>
             </button>
           </li>
 
           <li class="nav-item">
-            <button class="btn btn-outline-secondary">
-              <a class="nav-link" aria-current="page" href="#">PROJECTS</a>
+            <button class="btn navbtn btn-outline-secondary">
+              <a class="nav-link" aria-current="page" href="./projects_home.html">PROJECTS</a>
             </button>
           </li>
 
           <li class="nav-item">
-            <button class="btn btn-outline-secondary">
-              <a class="nav-link" aria-current="page" href="#">ABOUT US</a>
+            <button class="btn navbtn btn-outline-secondary">
+              <a class="nav-link" aria-current="page" href="#aboutUs">ABOUT US</a>
             </button>
           </li>
 
           <li class="nav-item">
-            <button class="btn btn-outline-secondary">
-              <a class="nav-link" aria-current="page" href="#">SERVICES</a>
+            <button class="btn navbtn btn-outline-secondary">
+              <a class="nav-link" aria-current="page" href="#services">SERVICES</a>
             </button>
           </li>
 
           <li class="nav-item">
-            <button class="btn btn-outline-secondary">
-              <a class="nav-link" aria-current="page" href="#">CONTACT</a>
+            <button class="btn navbtn btn-outline-secondary">
+              <a class="nav-link" aria-current="page" href="#contactUs">CONTACT</a>
             </button>
           </li>
         </ul>
@@ -66,13 +66,13 @@
   <!-- <div class="overlay"></div> -->
 
 
-  <!-----------------------------  Jumbotron section --------------------------- -->
+  <!-----------------  Jumbotron section ------------------- -->
   <section id="jumbotron">
-    <div class="container-flex">
+    <div class="container-flex videoContainer">
       <video class="" id="video-background" preload muted autoplay loop>
         <source src="./video/mixkit-top-aerial-shot-of-seashore-with-rocks-1090_AdobeExpress.mp4" type="video/mp4">
       </video>
-      <!-- <h1 class="text-center mt-1 jumboMessage">TEST Lense Of JG</h1> -->
+      <h1 class="text-center mt-1 jumboMessage">Lense Of JG</h1>
   
     </div>
   </section>
@@ -114,7 +114,7 @@
 <section id="services">
   <div class="container rounded-5 mt-5">
     <div class="row">
-      <h1 class="text-center mt-5 mb-3">SERVICES</h1>
+      <h1 class="text-center mt-5 mb-5">SERVICES</h1>
 
       <!-- photography section -->
       <img class="img-fluid rounded-5 service-img" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" 
@@ -230,10 +230,10 @@
 
 <!-- ------------------------------------ -->
 <!-- Contact Section -->
-<section class="mb-4">
+<section class="mb-4" id="contactUs">
 <div class="container">
 <!--Section heading-->
-<h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+<h2 class="h1-responsive font-weight-bold text-center my-4">CONTACT US</h2>
 <!--Section description-->
 <p class="text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consequatur esse quas asperiores veniam perspiciatis a tempore? 
   Voluptas sapiente rerum itaque totam rem, cum ipsa similique enim accusantium debitis impedit?</p>
@@ -297,7 +297,7 @@
         </form>
 
         <div class="text-center text-md-left">
-          <a class="btn btn-secondary" onclick="validateForm();">Send</a>
+          <a class="btn sendbtn btn-secondary" onclick="validateForm();">Send</a>
         </div>
         <div class="status"></div>
     </div>
@@ -312,17 +312,17 @@
 <!-- footer Section -->
 <footer>
   <div class="container">
-    <div class="row mt-5 mb-3">
-      <div class="col-lg-4 col-md-6 col-sm-6">COPYRIGHT 2023 &#169;</div>
-      <div class="col-lg-4 col-md-6 col-sm-6 text-center">
-        <button class="btn btn-outline-secondary">
-          <a class="nav-link" aria-current="page" href="#">YOUTUBE</a>
+    <div class="row mt-5 mb-3 d-flex">
+      <div class="col-lg-4 col-md-6 col-sm-6 order-lg-1 order-md-2 order-sm-2">COPYRIGHT 2023 &#169;</div>
+      <div class="col-lg-4 col-md-12 col-sm-12 order-lg-2 order-md-1 order-sm-1 text-center">
+        <button class="btn footbtn btn-outline-secondary">
+          <a class="nav-link" aria-current="page" href="https://www.youtube.com/@jsquaredgarcia4190" target="blank">YOUTUBE</a>
         </button>
-        <button class="btn btn-outline-secondary">
-          <a class="nav-link" aria-current="page" href="#">INSTAGRAM</a>
+        <button class="btn footbtn btn-outline-secondary">
+          <a class="nav-link" aria-current="page" href="https://www.instagram.com/lensofjg/" target="blank">INSTAGRAM</a>
         </button>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 text-end">INSERT LOGO HERE</div>
+      <div class="col-lg-4 col-md-6 col-sm-6 order-md-3 order-sm-3 text-end">INSERT LOGO HERE</div>
     </div>
 
   </div>
