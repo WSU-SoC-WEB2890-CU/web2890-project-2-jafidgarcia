@@ -36,6 +36,55 @@ html{
   overflow-x: hidden;
 }
 
+// not being used
+// .scroll {
+//   overflow-y: scroll;
+//   // height: 500px;
+//   animation: scroll 5s ease-in;
+// }
+
+// @keyframes scroll {
+//   0% {transform: translateY(0);}
+//   100% {transform: translateY(-5%);}
+// }
+
+// not being used
+// .scroll-effect {
+//   animation: scroll-effect 10s ease-in-out infinite;
+// }
+
+// @keyframes scroll-effect {
+//   0% {
+//     transform: translateY(0);
+//   }
+//   50% {
+//     transform: translateY(-15px);
+//   }
+//   100% {
+//     transform: translateY(0);
+//   }
+// }
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+}
+
+.fade-in2 {
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+
+.fade-in.show2 {
+  opacity: 1;
+}
+
+
+
 .navbtn{
     padding-left: 30px;
     padding-right: 30px;
@@ -187,7 +236,7 @@ html{
 
 /////////////////////////////////////////
 // aboutUs Section
-#aboutUs{
+#section-1{
     background-image: url(../images/temp_img1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
