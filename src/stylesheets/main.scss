@@ -41,7 +41,8 @@ html{
     padding-right: 30px;
     border: 3px solid lightgray;
     border-radius: 100px;
-    padding-top: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
     margin-left: 10px;
 
     @include media-breakpoint-down(lg){
@@ -162,16 +163,22 @@ html{
       height: auto;
     }
     .jumboMessage{
+      font-family: 'Rubik', sans-serif;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-family: 'Unbounded', cursive;
       position: absolute;
       top: 80%;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 2;
-      color: white;
+      color: black;
+      transition: color 3s ease-out;
       filter: opacity(.5);
       &:hover{
+        color: white;
+        // color: darkcyan;
         filter: opacity(.9);
-        scale: 1.2;
+        // scale: 1.2;
       }
   }
   }

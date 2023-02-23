@@ -10,6 +10,11 @@
   <meta name="description" content="TODO: Project 2 ...">
 
   <link rel="stylesheet" href="./stylesheets/main.scss">
+<!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&family=Source+Sans+Pro:wght@300&family=Unbounded:wght@300;500&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -242,64 +247,61 @@
 
     <!--Grid column-->
     <div class="col-md-12 mb-md-0 mb-5">
-        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-            <!--Grid row-->
+      <!-- https://formsubmit.co/live-demo -->
+        <form id="contact-form" name="contact-form" action="https://formsubmit.co/jafidgarcia@gmail.com" method="POST">
+          <!-- row 1 -->
             <div class="row">
 
-                <!--Grid column-->
                 <div class="col-md-6">
                     <div class="md-form mb-0">
-                        <input type="text" id="name" name="name" class="form-control">
+                        <input type="text" id="name" name="name" required  class="form-control">
                         <label for="name" class="">Your name</label>
                     </div>
                 </div>
-                <!--Grid column-->
 
-                <!--Grid column-->
                 <div class="col-md-6">
                     <div class="md-form mb-0">
-                        <input type="text" id="email" name="email" class="form-control">
+                        <input type="text" id="email" name="email" required  class="form-control">
                         <label for="email" class="">Your email</label>
                     </div>
                 </div>
-                <!--Grid column-->
 
             </div>
-            <!--Grid row-->
-
-            <!--Grid row-->
+            <!-- row 2 -->
             <div class="row">
                 <div class="col-md-12">
                     <div class="md-form mb-0">
-                        <input type="text" id="subject" name="subject" class="form-control">
-                        <label for="subject" class="">Subject</label>
+                        <input type="hidden" id="subject" name="subject" class="form-control" value="New Email from Website">
+                        <!-- <label for="subject" class="">Subject</label> -->
+                        <!-- https://yourdomain.co/thanks.html -->
+                        <input type="hidden" name="_next" value="https://lense-of-jg.netlify.app/projects_home.html">
+                        <input type="hidden" name="_captcha" value="true">
                     </div>
                 </div>
             </div>
-            <!--Grid row-->
 
-            <!--Grid row-->
+            <!-- row 3 -->
             <div class="row">
 
-                <!--Grid column-->
                 <div class="col-md-12">
 
                     <div class="md-form">
-                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                        <textarea type="text" id="message" name="message" rows="2" required class="form-control md-textarea"></textarea>
                         <label for="message">Your message</label>
                     </div>
 
                 </div>
             </div>
-            <!--Grid row-->
+
+            <div class="text-center text-md-left">
+              <button type="submit" class="btn btn-outline-secondary sendbtn">Send Email</button>
+              <!-- <a class="btn sendbtn btn-secondary" onclick="validateForm();">Send</a> -->
+            </div>
 
         </form>
 
-        <div class="text-center text-md-left">
-          <a class="btn sendbtn btn-secondary" onclick="validateForm();">Send</a>
-        </div>
-        <div class="status"></div>
+
+
     </div>
     <!--Grid column-->
 
