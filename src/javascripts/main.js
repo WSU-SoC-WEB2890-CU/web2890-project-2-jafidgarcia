@@ -26,30 +26,6 @@ sections.forEach((section, index) => {
 
 
 
-// const observer = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//       if (entry.intersectionRatio > 0) {
-//         entry.target.classList.add('show');
-//       }
-//     });
-//   });
-  
-//   observer.observe(document.querySelector('.fade-in'));
-
-
-
-//   const observer2 = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//       if (entry.intersectionRatio > 0) {
-//         entry.target.classList.add('show2');
-//       }
-//     });
-//   });
-  
-//   observer.observe(document.querySelector('.fade-in2'));
-
-  
-
 // function validateForm() {
 //     var name =  document.getElementById('name').value;
 //     if (name == "") {

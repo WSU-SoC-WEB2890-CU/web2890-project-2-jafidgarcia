@@ -36,77 +36,33 @@ html{
   overflow-x: hidden;
 }
 
-// not being used
-// .scroll {
-//   overflow-y: scroll;
-//   // height: 500px;
-//   animation: scroll 5s ease-in;
-// }
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+///   Navigtation Section
 
-// @keyframes scroll {
-//   0% {transform: translateY(0);}
-//   100% {transform: translateY(-5%);}
-// }
-
-// not being used
-// .scroll-effect {
-//   animation: scroll-effect 10s ease-in-out infinite;
-// }
-
-// @keyframes scroll-effect {
-//   0% {
-//     transform: translateY(0);
-//   }
-//   50% {
-//     transform: translateY(-15px);
-//   }
-//   100% {
-//     transform: translateY(0);
-//   }
-// }
-
-.fade-in {
-  opacity: 0;
-  transition: opacity 3s ease-in-out;
-}
-
-.fade-in.show {
-  opacity: 1;
-}
-
-.fade-in2 {
-  opacity: 0;
-  transition: opacity 3s ease-in-out;
-}
-
-.fade-in.show2 {
-  opacity: 1;
-}
-
-
-
+// nav button rules
 .navbtn{
-    padding-left: 30px;
-    padding-right: 30px;
-    border: 3px solid lightgray;
-    border-radius: 100px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    margin-left: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 3px solid lightgray;
+  border-radius: 100px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-left: 10px;
 
-    @include media-breakpoint-down(lg){
-        font-size: 1.2rem;
-        text-align: center !important;
-        padding-left: 100px;
-        padding-right: 100px;
-        margin-bottom: 5px;
-        }
-    @include media-breakpoint-down(md){
-        text-align: center !important;
-        margin-right: auto;
-        font-size: 1rem;
-        margin-bottom: 5px;
-    }
+  @include media-breakpoint-down(lg){
+      font-size: 1.2rem;
+      text-align: center !important;
+      padding-left: 100px;
+      padding-right: 100px;
+      margin-bottom: 5px;
+      }
+  @include media-breakpoint-down(md){
+      text-align: center !important;
+      margin-right: auto;
+      font-size: 1rem;
+      margin-bottom: 5px;
+  }
 }
 
 /////////////////////////////////////////
@@ -114,51 +70,139 @@ html{
 
 // trying this for mobile but still not working
 @media only screen and (max-width: 992px) and (orientation: portrait) and (pointer: coarse) {
-    .navbar-collapse {
-      position: fixed;
-      // this gives 80px at top to still display the logo/hamburger icon
-      // might need adjusting if the size of logo changes
-      top: 80px;
-      left: 0;
-      width: 100%;
-      height: calc(100vh - 80px);
-      background-color: #333;
-      padding: 20px;
-      overflow-y: hidden;
-      overflow-x: hidden;
-    }
-  
-    .navbar-nav > li {
-        padding-bottom: 25px;
-      display: block;
-      margin: 0;
-      text-align: center;
-    }
+  .navbar-collapse {
+    position: fixed;
+    // this gives 80px at top to still display the logo/hamburger icon
+    // might need adjusting if the size of logo changes
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: #333;
+    padding: 20px;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
 
-  @media(max-width: 992px){
-    .navbar-collapse {
-      position: fixed;
-      // this gives 80px at top to still display the logo/hamburger icon
-      // might need adjusting if the size of logo changes
-      top: 80px;
-      left: 0;
-      width: 100%;
-      height: calc(100vh - 80px);
-      background-color: #333;
-      padding: 20px;
-      overflow-y: hidden;
-      overflow-x: hidden;
-    }
-  
-    .navbar-nav > li {
-        padding-bottom: 25px;
-      display: block;
-      margin: 0;
-      text-align: center;
-    }
+  .navbar-nav > li {
+      padding-bottom: 25px;
+    display: block;
+    margin: 0;
+    text-align: center;
   }
-/////////////////////////////////////////
+}
+
+@media(max-width: 992px){
+  .navbar-collapse {
+    position: fixed;
+    // this gives 80px at top to still display the logo/hamburger icon
+    // might need adjusting if the size of logo changes
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: #333;
+    padding: 20px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .navbar-nav > li {
+      padding-bottom: 25px;
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+}
+///////////////////////////////////////////////////////////////////////////
+/// End of Nav Rules
+//////////////////////////////////////////////////////////////////////////////
+ 
+
+///////////////////////////////////////////////////////////////////////////
+//  Video Jumbotron Rules
+/////////////////////////////////////////////////////////////////////////////
+
+#video-background { 
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  width:100%;
+}
+
+.videoContainer{
+position: relative;
+#video-background{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.jumboMessage{
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Unbounded', cursive;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: black;
+  transition: color 3s ease-out;
+  filter: opacity(.5);
+  &:hover{
+    color: white;
+    filter: opacity(.9);
+  }
+}
+}
+
+// flashing arrow
+.material-symbols-outlined {
+  color: black;
+  filter: opacity(.5);
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48
+}
+// .material-symbols-outlined {
+//   font-variation-settings:
+//   'FILL' 1,
+//   'wght' 700,
+//   'GRAD' 0,
+//   'opsz' 48
+// }
+
+.arrow {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 50px;
+  height: 50px;
+  animation: flashing 3s ease-in-out 3;
+}
+@keyframes flashing {
+  0% {
+    opacity: 1;
+    color: black;
+  }
+  50% {
+    opacity: 0;
+    color: white;
+  }
+  100% {
+    opacity: 1;
+    color: black;
+  }
+}
+///////////////////////////////////////////////////////////////////////////
+//  End of Video Jumbotron Rules
+/////////////////////////////////////////////////////////////////////////////
+
 
 
 /* Style the full-screen overlay */
@@ -195,53 +239,29 @@ html{
 // }
 
 
-  #video-background { 
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      overflow: hidden;
-      width:100%;
-  }
 
-  .videoContainer{
-    position: relative;
-    #video-background{
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-    .jumboMessage{
-      font-family: 'Rubik', sans-serif;
-      font-family: 'Source Sans Pro', sans-serif;
-      font-family: 'Unbounded', cursive;
-      position: absolute;
-      top: 80%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 2;
-      color: black;
-      transition: color 3s ease-out;
-      filter: opacity(.5);
-      &:hover{
-        color: white;
-        // color: darkcyan;
-        filter: opacity(.9);
-        // scale: 1.2;
-      }
-  }
-  }
-
-
-
-/////////////////////////////////////////
-// aboutUs Section
+///////////////////////////////////////////////////////////////////////////
+//  About Us Section Rules
+/////////////////////////////////////////////////////////////////////////////
 #section-1{
     background-image: url(../images/temp_img1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+// this is for javascript code for fade in effect when scrolling
+// this begins at the aboutUs section
+.fade-in {
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+.fade-in.show {
+  opacity: 1;
+}
+
+///////////////////////////////////////////////////////////////////////////
+//  End of About Us Section Rules
+/////////////////////////////////////////////////////////////////////////////
 
 
 
