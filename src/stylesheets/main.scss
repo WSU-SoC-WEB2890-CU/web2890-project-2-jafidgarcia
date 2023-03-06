@@ -115,6 +115,11 @@ html{
     text-align: center;
   }
 }
+
+// fills in the gap created by the navBar for element below it
+.navBarClearFix{
+  height: 80px;
+}
 ///////////////////////////////////////////////////////////////////////////
 /// End of Nav Rules
 //////////////////////////////////////////////////////////////////////////////
@@ -244,11 +249,16 @@ position: relative;
 ///////////////////////////////////////////////////////////////////////////
 //  About Us Section Rules
 /////////////////////////////////////////////////////////////////////////////
-#section-1{
+.aboutUsBackground{
     background-image: url(../images/TEST-LENSJG-FULL-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-} 
+}
+
+
+@media(max-width: 992px){
+  // background-image: url(../images/TEST-LENSJG-FULL-1.jpg);
+}
 
 // this is for javascript code for fade in effect when scrolling
 // this begins at the aboutUs section
@@ -315,4 +325,128 @@ position: relative;
 //     padding-left: 15px;
 //     padding-right: 15px;
 // }
+}
+
+/////////////////////////////////////////////////////////////// 
+/////////////////////////////////////////////////////////////// 
+// projects page section
+/////////////////////////////////////////////////////////////// 
+///////////////////////////////////////////////////////////////// 
+
+
+.galleriesMessage{
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Unbounded', cursive;
+  font-size: 5rem;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: black;
+  transition: color 3s ease-out;
+  filter: opacity(.5);
+  &:hover{
+    color: white;
+    filter: opacity(.9);
+  }
+  @media(max-width: 400px){
+    font-size: 2rem;
+    top: 12%;
+    left: 50%;
+  }
+}
+
+.studioCover{
+margin-top: 100px;
+margin-left: 50px;
+position: relative;
+display: inline-block;
+@media(max-width: 400px){
+  margin-top: 50px;
+  margin-left: 0px;
+}
+}
+
+.projectsImg{
+  width: 80%;
+  border-radius: 50px;
+  transition: transform 1.5s ease-in-out;
+  &:hover{
+    transform: scale(1.1);
+    filter: opacity(.8);
+  }
+}
+
+.projectsHeaderLeft{
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Unbounded', cursive;
+
+  position: absolute;
+  top: 80%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  @media(max-width: 992px){
+    font-size: 2rem;
+  }
+  @media(max-width: 400px){
+    font-size: 1.5rem;
+    top: 100%;
+    left: 50%;
+  }
+  z-index: 1;
+  color: white;
+  transition: color 3s ease-out;
+  filter: opacity(.5);
+  &:hover{
+    color: white;
+    filter: opacity(.9);
+  }
+}
+
+.projectsHeaderRight{
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Unbounded', cursive;
+
+  position: absolute;
+  top: 80%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  @media(max-width: 992px){
+    font-size: 2rem;
+  }
+  @media(max-width: 400px){
+    font-size: 1.5rem;
+    top: 100%;
+    left: 50%;
+  }
+  z-index: 1;
+  color: white;
+  transition: color 3s ease-out;
+  filter: opacity(.5);
+  &:hover{
+    color: white;
+    filter: opacity(.9);
+  }
+}
+
+
+// this also needs to be kept at the bottom of the scss so it is not over written by other rules
+// this is for javascript code for fade in effect when scrolling
+// this begins at the aboutUs section
+.fade-in {
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+.fade-in.show {
+  opacity: 1;
 }
