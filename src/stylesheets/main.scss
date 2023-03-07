@@ -326,8 +326,6 @@ position: relative;
 // projects page section
 /////////////////////////////////////////////////////////////// 
 ///////////////////////////////////////////////////////////////// 
-
-
 .galleriesMessage{
   font-family: 'Rubik', sans-serif;
   font-family: 'Source Sans Pro', sans-serif;
@@ -452,6 +450,34 @@ display: inline-block;
   color: #fff !important;
   cursor: pointer;
 }
+
+// end of projects page section
+/////////////////////////////////////////////////////////////// 
+///////////////////////////////////////////////////////////////// 
+
+
+
+////////////////////////////////////////////////////////////////// 
+/////////////////////////////////////////////////////////////// 
+body {
+  margin: 0;
+}
+#gallery {
+  // height: 400px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+#gallery img {
+  display: inline-block;
+  margin-right: 10px;
+  @media(max-width: 992px){
+    width: 60%;
+  }
+}
+
 
 
 // this also needs to be kept at the bottom of the scss so it is not over written by other rules

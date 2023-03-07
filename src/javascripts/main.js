@@ -2,6 +2,9 @@
 import "bootstrap"
 
 
+
+///////////////////////////////////////////////////////////////////////
+// creates fade in effect for all sections when they are scrolled past
 const sections = document.querySelectorAll('section');
 
 sections.forEach((section, index) => {
@@ -23,6 +26,36 @@ sections.forEach((section, index) => {
   // Observe the section
   observer.observe(section);
 });
+///////////////////////////////////////////////////////////////////////
+
+
+
+// horizontal scroll effect for gallery
+var gallery = document.getElementById("gallery");
+var startingScroll = 0;
+
+window.addEventListener("scroll", function() {
+  var newScrollPosition = window.scrollY;
+  var scrollDelta = newScrollPosition - startingScroll;
+  startingScroll = newScrollPosition;
+  var galleryItems = gallery.getElementsByTagName("img");
+  for (var i = 0; i < galleryItems.length; i++) {
+    galleryItems[i].style.transform = "translateX(" + (-startingScroll) + "px)";
+  }
+});
+
+window.addEventListener("wheel", function(event) {
+  if (event.deltaY > 0 ) {
+    gallery.scrollLeft += 100;
+  } else {
+    gallery.scrollLeft -= 100;
+  }
+  event.preventDefault();
+});
+
+
+
+
 
 
 
