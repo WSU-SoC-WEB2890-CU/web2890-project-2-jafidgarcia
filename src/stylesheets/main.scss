@@ -279,29 +279,47 @@ position: relative;
   &:hover{
     scale: 1.1;
   }
-
-//   @include media-breakpoint-down(lg){
-//       font-size: 1.2rem;
-//       text-align: center !important;
-//       padding-left: 100px;
-//       padding-right: 100px;
-//       margin-bottom: 5px;
-//       }
-//   @include media-breakpoint-down(md){
-//       text-align: center !important;
-//       margin-right: auto;
-//       font-size: 1rem;
-//       margin-bottom: 5px;
-//   }
-//   @include media-breakpoint-down(sm){
-//     text-align: center !important;
-//     margin-right: auto;
-//     font-size: 1rem;
-//     margin-bottom: 5px;
-//     padding-left: 15px;
-//     padding-right: 15px;
-// }
+  @include media-breakpoint-down(lg){
+      font-size: 1.2rem;
+      text-align: center !important;
+      padding-left: 100px;
+      padding-right: 100px;
+      margin-bottom: 5px;
+      }
+  @include media-breakpoint-down(md){
+      text-align: center !important;
+      margin-right: auto;
+      font-size: 1rem;
+      margin-bottom: 5px;
+  }
+  @include media-breakpoint-down(sm){
+    text-align: center !important;
+    margin-right: auto;
+    font-size: 1rem;
+    // color: red;
+    // margin-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+}
+.footbtn{
+  margin-bottom: 30px;
+}
+@media(max-width: 400px){
+  .copySection, .logoSection{
+    text-align: center !important;
+  }
+  .copySection{
+    padding-bottom: 20px;
+  }
+  .footbtn{
+    margin-bottom: 10px;
+  }
+  .logoSection{
+    margin-top: 10px;
+  }
+}
+
 
 /////////////////////////////////////////////////////////////// 
 /////////////////////////////////////////////////////////////// 
