@@ -125,10 +125,11 @@ html{
 //////////////////////////////////////////////////////////////////////////////
  
 
+
+
 ///////////////////////////////////////////////////////////////////////////
 //  Video Jumbotron Rules
 /////////////////////////////////////////////////////////////////////////////
-
 #video-background { 
   top: 0;
   right: 0;
@@ -470,11 +471,38 @@ body {
   white-space: nowrap;
 }
 
+.galleryHeader{
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  strong{
+    font-family: 'Major Mono Display', monospace;
+  }
+}
+
+
 #gallery img {
   display: inline-block;
   margin-right: 10px;
   @media(max-width: 992px){
     width: 60%;
+  }
+  &:hover{
+    filter: opacity(.8);
+    cursor: pointer;
+  }
+}
+
+.Limage {
+  display: inline-block;
+  margin-right: 10px;
+  width: 100%;
+  @media(max-width: 992px){
+    width: 100%;
+  }
+  &:hover{
+    filter: opacity(.8);
+    cursor: pointer;
   }
 }
 

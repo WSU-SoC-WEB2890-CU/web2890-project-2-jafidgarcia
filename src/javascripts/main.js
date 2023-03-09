@@ -30,28 +30,35 @@ sections.forEach((section, index) => {
 
 
 
-// horizontal scroll effect for gallery
-var gallery = document.getElementById("gallery");
-var startingScroll = 0;
+// // horizontal scroll effect for gallery
+// var gallery = document.getElementById("gallery");
+// var startingScroll = 0;
 
-window.addEventListener("scroll", function() {
-  var newScrollPosition = window.scrollY;
-  var scrollDelta = newScrollPosition - startingScroll;
-  startingScroll = newScrollPosition;
-  var galleryItems = gallery.getElementsByTagName("img");
-  for (var i = 0; i < galleryItems.length; i++) {
-    galleryItems[i].style.transform = "translateX(" + (-startingScroll) + "px)";
-  }
-});
+// window.addEventListener("scroll", function() {
+//   var newScrollPosition = window.scrollY;
+//   // var scrollDelta = newScrollPosition - startingScroll;
+//   startingScroll = newScrollPosition;
+//   var galleryItems = gallery.getElementsByTagName("img");
+//   for (var i = 0; i < galleryItems.length; i++) {
+//     galleryItems[i].style.transform = "translateX(" + (-startingScroll) + "px)";
+//   }
+// });
 
-window.addEventListener("wheel", function(event) {
-  if (event.deltaY > 0 ) {
-    gallery.scrollLeft += 100;
-  } else {
-    gallery.scrollLeft -= 100;
-  }
-  event.preventDefault();
-});
+// window.addEventListener("wheel", function(event) {
+//   if (event.deltaY > 0 ) {
+//     gallery.scrollLeft += 150;
+//   } else {
+//     gallery.scrollLeft -= 150;
+//   }
+//   event.preventDefault();
+// });
+
+
+
+
+
+
+
 
 
 
