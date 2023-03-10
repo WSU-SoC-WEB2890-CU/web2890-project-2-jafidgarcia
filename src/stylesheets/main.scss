@@ -564,6 +564,17 @@ body {
   }
 }
 
+.Simage{
+  display: inline-block;
+  margin-right: 10px;
+  width: 100%;
+  max-width: 40%;
+  @media(max-width: 400px){
+    border: solid 1px pink;
+    margin-right: -5px!important;
+    min-width: 80%;
+  }
+}
 
 
 // this also needs to be kept at the bottom of the scss so it is not over written by other rules
