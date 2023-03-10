@@ -34,6 +34,7 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
 html{
   // fixes mobile issue
   overflow-x: hidden;
+  // background-color: black !important;
 }
 
 ///////////////////////////////////////////////////////////////////////////
@@ -352,7 +353,6 @@ position: relative;
 }
 
 .studioCover{
-
 margin-top: 100px;
 margin-left: 50px;
 position: relative;
@@ -493,12 +493,37 @@ body {
   }
 }
 
-.Limage {
+.LHimage {
   display: inline-block;
   margin-right: 10px;
   width: 100%;
-  @media(max-width: 992px){
-    width: 100%;
+  max-width: 80%;
+  @media(max-width: 400px){
+    border: solid 1px pink;
+    margin-right: -5px!important;
+    min-width: 100%;
+  }
+  // @media(max-width: 992px){
+  //   width: 100%;
+  // }
+  &:hover{
+    filter: opacity(.8);
+    cursor: pointer;
+  }
+}
+
+.Limage {
+  display: inline-block;
+  margin-right: 10px;
+  width: 40% !important;
+  max-width: 35%;
+  // @media(max-width: 992px){
+  //    width: 80%;
+  // }
+  @media(max-width: 400px){
+    border: solid 1px pink;
+    margin-right: -5px!important;
+    min-width: 50%;
   }
   &:hover{
     filter: opacity(.8);
