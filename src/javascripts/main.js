@@ -1,6 +1,42 @@
 //TODO - Your ES6 JavaScript code (if any) goes here
 import "bootstrap"
 
+console.log("testing");
+///////////////////////////////////////////////////////////////////////
+// this loop should stop video after 2 loops but it is not working 
+const video = document.getElementById("mobileVideo");
+var loopCount = 0;
+video.addEventListener("ended", function() {
+  console.log("ended event listener worked");
+  loopCount++;
+  if (loopCount > 2) {
+    video.pause();
+    console.log("Pause has been triggered");
+  } 
+  // else {
+  //   video.pause();
+  //   video.currentTime = 0;
+  //   console.log("Pause has been triggered");
+  // }
+});
+///////////////////////////////////////////////////////////////////////
+var videos = document.querySelectorAll("video");
+  
+  videos.forEach(function(video) {
+    var loopCount = 0;
+    video.addEventListener("ended", function() {
+      loopCount++;
+      if (loopCount < 2) {
+        video.play();
+      }else{
+        video.pause();
+        video.currentTime = 0;
+        console.log("Pause has been triggered");
+      }
+    });
+  });
+  ///////////////////////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////////////////////
 
 
 ///////////////////////////////////////////////////////////////////////
