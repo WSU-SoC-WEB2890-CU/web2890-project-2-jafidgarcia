@@ -67,6 +67,17 @@ html{
   }
 }
 
+// camera logo
+.material-symbols-outlined {
+  color: #fff;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' 200,
+  'opsz' 48
+}
+
+
 /////////////////////////////////////////
 // full screen drop down hamburger menu
 @media only screen and (max-width: 992px) and (orientation: portrait) and (pointer: coarse) {
@@ -275,8 +286,6 @@ position: relative;
       padding-bottom: 25px;
     }
 }
-
-
 
 
 // this is for javascript code for fade in effect when scrolling
