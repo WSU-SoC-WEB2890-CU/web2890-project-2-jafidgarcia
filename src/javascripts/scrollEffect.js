@@ -35,7 +35,7 @@ if (isTouchDevice) {
 
 window.addEventListener("scroll", function() {
   var newScrollPosition = window.scrollY;
-  var scrollDelta = newScrollPosition - scrollPosition;
+  // var scrollDelta = newScrollPosition - scrollPosition;
   scrollPosition = newScrollPosition;
   var galleryItems = gallery.getElementsByTagName("img");
   for (var i = 0; i < galleryItems.length; i++) {
