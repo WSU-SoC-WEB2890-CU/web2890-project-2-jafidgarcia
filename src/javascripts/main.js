@@ -11,7 +11,7 @@ video.addEventListener("ended", function() {
   loopCount++;
   if (loopCount > 2) {
     video.pause();
-    console.log("Pause has been triggered");s
+    console.log("Pause has been triggered");
   } 
   // else {
   //   video.pause();
