@@ -502,6 +502,10 @@ display: inline-block;
   cursor: pointer;
 }
 
+.nextGallery{
+  border-radius: 50px;
+}
+
 // end of projects page section
 /////////////////////////////////////////////////////////////// 
 ///////////////////////////////////////////////////////////////// 
@@ -550,7 +554,6 @@ body {
   max-width: 80%;
   // resizes image on mobile
   @media(max-width: 400px){
-    border: solid 1px pink;
     margin-right: -5px!important;
     min-width: 100%;
   }
@@ -568,7 +571,6 @@ body {
   max-width: 35%;
 // resizes images on mobile
   @media(max-width: 400px){
-    border: solid 1px pink;
     margin-right: -5px!important;
     min-width: 50%;
   }
@@ -584,7 +586,6 @@ body {
   width: 100%;
   max-width: 40%;
   @media(max-width: 400px){
-    border: solid 1px pink;
     margin-right: -5px!important;
     min-width: 80%;
   }
