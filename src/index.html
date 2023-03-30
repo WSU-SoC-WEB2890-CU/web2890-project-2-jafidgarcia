@@ -24,6 +24,10 @@
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Rubik:wght@700&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+<!-- oswald || quattrocento -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento" rel="stylesheet">
+  
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
@@ -42,7 +46,8 @@
           </span> LensOfJG</a>
       
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
       </button>
 
       <!-- id="navbarSupportedContent" -->
@@ -87,6 +92,7 @@
 </div>
 
   <!-- <div class="overlay"></div> -->
+  <!--------------------------- End of Navigation --------------------------- -->
 
 
   <!-----------------  Jumbotron section ------------------- -->
@@ -98,11 +104,9 @@
       </video>
 
       <div class="jumboMessage">
-        <h1 class="text-center mt-1">Lens Of JG</h1>
+        <h1 class="text-center mt-1 galleryHeader">  <strong>L</strong>ENS OF  <strong>JG</strong></h1>
         
-          <span class="material-symbols-outlined arrow">
-            keyboard_double_arrow_down
-            </span>
+        <i class="fa-solid fa-arrow-down fa-bounce arrow mt-3" style="color: #ffffff;"></i>
         </div>
   
     </div>
@@ -115,12 +119,12 @@
       <div class="jumboMessage">
       <h1 class="text-center mt-1">Lens Of JG</h1>
       
-        <span class="material-symbols-outlined arrow">
-          keyboard_double_arrow_down
-          </span>
+      <i class="fa-solid fa-arrow-down fa-bounce arrow mt-3" style="color: #ffffff;"></i>
+
       </div>
 
     </div>
+  <!----------------- End of Jumbotron section ------------------- -->
 
 
 <!-- ------------------------------------ -->
@@ -130,21 +134,19 @@
   <div class="row">
     <div class="col-lg-4 col-md-12"></div>
     <div class="col-lg-8 col-md-12">
-      <h1 class="text-center mt-5">ABOUT</h1>
+      <h1 class="text-center mt-5 oswaldReg">ABOUT</h1>
 
-      <p class="text-white mt-5 ">Hello! My name is Jared Garcia and I am a Utah based photographer who seeks to 
+      <p class="text-white mt-5 quattroReg">Hello! My name is Jared Garcia and I am a Utah based photographer who seeks to 
         document life moments whether in a studio or outdoors. As a certified Part 107 pilot I enjpy capturing moments 
         from a unique angle. When I'm not taking pictures, you can find me in the mountains snowboarding or mountain biking,
         finding inspiration from nature for your next photoshoot. 
       </p>
 
-      <!-- <br><br><br><br> -->
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <a class="btn btn-secondary" href="#section-3">Contact Me</a>
+      </div>
 
-    </div>
-    <div class="col-8">
-      <!-- <img class="img-fluid rounded-5 mt-5" src="./images/temp_img1.jpg" alt=""> -->
-    </div>
-    
+    </div>    
   </div>
   <!-- end of main row -->
 </div>
@@ -154,13 +156,12 @@
 <!-- ------------------------------------ -->
 
 
-
 <!-- ------------------------------------ -->
 <!-- Services Section -->
 <section id="" class="">
   <div class="container rounded-5">
     <div class="row">
-      <h1 class="text-center mt-5 mb-5">SERVICES</h1>
+      <h1 class="text-center mt-5 mb-5 text-info oswaldReg">SERVICES</h1>
 
       <!-- photography section -->
       <img class="img-fluid rounded-5 service-img" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" 
@@ -170,11 +171,11 @@
         <div class="accordion-item">
 
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-              <h2 class="">Photography</h2>
+              <h2 style="font-size: 2rem;" class="oswaldReg">Photography</h2>
             </button>
          
           <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
+            <div class="accordion-body quattroReg">
               <p>We are a full-service photography studio offering a range of services including lifestyle and commercial photography. 
                 I am dedicated to providing you with stunning images that capture the essence of your brand, product, or personality.</p>
 
@@ -216,11 +217,11 @@
         <div class="accordion-item">
 
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              <h2 class="">Drone</h2>
+              <h2 style="font-size: 2rem;" class="oswaldReg">Drone</h2>
             </button>
          
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
+            <div class="accordion-body quattroReg">
               <p>Looking to take your photography to new heights? Consider adding drone photography to your project!
                  As an up and coming videographer, I am excited to offer drone photography services that can capture stunning aerial shots of your event or project.</p>
 
@@ -255,11 +256,11 @@
 
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" 
             aria-controls="collapseThree">
-              <h2 class="">Videography</h2>
+              <h2 style="font-size: 2rem;" class="oswaldReg">Videography</h2>
             </button>
          
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
+            <div class="accordion-body quattroReg">
               <p> As an up and coming videographer, I am excited to offer my skills and creativity to capture your special moments.
                 Whether you need a videographer for your wedding, event, or business, I am here to provide you with high-quality 
                 footage that captures the essence of your unique vision. My passion for videography is evident in every shot, and 
@@ -293,11 +294,11 @@
 
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" 
             aria-controls="collapseFour">
-              <h2 class="">Video Editing</h2>
+            <h2 style="font-size: 2rem;" class="oswaldReg">Video Editing</h2>
             </button>
          
           <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
+            <div class="accordion-body quattroReg">
               <p>In addition to my videography services, I also offer professional video editing services. I use the latest editing 
                 software and techniques to turn your raw footage into a polished and cohesive final product.</p>
 
@@ -331,15 +332,14 @@
 <!-- ------------------------------------ -->
 
 
-
 <!-- ------------------------------------ -->
 <!-- Contact Section -->
 <section class="mb-4" id="">
 <div class="container">
 <!--Section heading-->
-<h2 class="h1-responsive font-weight-bold text-center my-4">CONTACT US</h2>
+<h2 class="h1-responsive font-weight-bold text-center text-info my-4 oswaldReg">CONTACT US</h2>
 <!--Section description-->
-<p class="text-center w-responsive mx-auto">Thank you for considering my services. 
+<p class="text-center w-responsive mx-auto quattroReg">Thank you for considering my services. 
   I would love to hear from you and discuss how I can bring your vision to life.</p>
 
 <p class="text-center w-responsive mx-auto mb-5">Please fill out the contact form below with your name, email address, and a brief message describing your project. 
@@ -402,8 +402,6 @@
 
         </form>
 
-
-
     </div>
     <!--Grid column-->
 
@@ -412,12 +410,14 @@
 </section>
 <!--End of Contact Section-->
 
+
 <!-- ------------------------------------ -->
 <!-- footer Section -->
-<section>
-  <footer>
+<section class="">
+  <footer class="footer bg-danger" >
+    <hr class="footerHR">
     <div class="container">
-      <div class="row mt-5 mb-3 d-flex">
+      <div class="row mt-3 mb-3 d-flex">
         <div class="col-lg-4 col-md-6 col-sm-6 order-lg-1 order-md-2 order-sm-2 copySection">COPYRIGHT 2023 &#169;</div>
         <div class="col-lg-4 col-md-12 col-sm-12 order-lg-2 order-md-1 order-sm-1 text-center mediaSection">
           <button class="btn footbtn btn-outline-secondary ">
@@ -440,7 +440,5 @@
 </section>
 
   
-
-
 </body>
 </html>

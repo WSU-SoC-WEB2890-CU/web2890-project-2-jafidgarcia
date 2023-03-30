@@ -25,9 +25,9 @@ if (isTouchDevice) {
 } else {
   window.addEventListener("wheel", function(event) {
     if (event.deltaY > 0) {
-      gallery.scrollLeft += 100;
+      gallery.scrollLeft += 50;
     } else {
-      gallery.scrollLeft -= 100;
+      gallery.scrollLeft -= 50;
     }
     // event.preventDefault();
   });

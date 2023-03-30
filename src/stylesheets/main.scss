@@ -9,19 +9,27 @@ $grid-breakpoints: (
   xxl: 1400px
 );
 
-// Services accordian SASS customs
-$accordion-button-active-bg: transparent;
+$secondary: #b0bbc3;
+$info: #788e9c;
+$warning: 	#008080;
+$danger: #35454c;
 
+// Services accordian SASS customs
+// $accordion-button-color: red;
+// $accordion-icon-color:    red;
+
+$accordion-button-active-bg: transparent;
 $accordion-button-focus-border-color:     transparent;
 $accordion-button-focus-box-shadow:       transparent;
 
-$accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
-$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+// $accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+// $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
 
 
 /* Your styles go here */
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+// @import "~@fortawesome/fontawesome-free/css/all.css";
 
 // .navbar{
 //     background-color:  rgba(0, 0, 0, 0.5);
@@ -36,7 +44,14 @@ html{
   overflow-x: hidden;
   // background-color: black !important;
 }
-
+.oswaldReg{
+  Font-Family: 'Oswald', Sans-Serif;
+  Font-Size: 3rem;
+}
+.quattroReg{
+  Font-Family: 'Quattrocento', Serif;
+  Font-Size: 1.1rem;
+}
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 ///   Navigtation Section
@@ -65,6 +80,10 @@ html{
       font-size: 1rem;
       margin-bottom: 5px;
   }
+}
+
+.navbar-toggler{
+  color: $info;
 }
 
 // camera logo
@@ -153,7 +172,7 @@ html{
 .MobileVideoContainer{
   position: relative;
   display: none;
-  @media(max-width: 450px){
+  @media(max-width: 600px){
   display: block;
   .jumboMessage{
     font-family: 'Rubik', sans-serif;
@@ -183,7 +202,7 @@ html{
 .videoContainer{
 position: relative;
 // video is replaced if one mobile device
-@media(max-width: 450px){
+@media(max-width: 600px){
   display: none;
   }
 #video-background{
@@ -211,23 +230,7 @@ position: relative;
 }
 }
 
-// flashing arrow
-.material-symbols-outlined {
-  color: black;
-  filter: opacity(.5);
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 700,
-  'GRAD' 0,
-  'opsz' 48
-}
-// .material-symbols-outlined {
-//   font-variation-settings:
-//   'FILL' 1,
-//   'wght' 700,
-//   'GRAD' 0,
-//   'opsz' 48
-// }
+
 
 .arrow {
   position: absolute;
@@ -236,22 +239,9 @@ position: relative;
   transform: translate(-50%, 50%);
   width: 50px;
   height: 50px;
-  animation: flashing 3s ease-in-out 3;
+  // animation: flashing 3s ease-in-out 3;
 }
-@keyframes flashing {
-  0% {
-    opacity: 1;
-    color: black;
-  }
-  50% {
-    opacity: 0;
-    color: white;
-  }
-  100% {
-    opacity: 1;
-    color: black;
-  }
-}
+
 ///////////////////////////////////////////////////////////////////////////
 //  End of Video Jumbotron Rules
 /////////////////////////////////////////////////////////////////////////////
@@ -316,11 +306,25 @@ position: relative;
     cursor: pointer;
   }
 }
-
+// .accordion-button::after {
+//   color: red!important;
+// }
 
 
 /////////////////////////////////////////
 // Footer Section
+.footer > *{
+  border: solid 1px $danger;
+}
+.footer{
+  margin-bottom: auto;
+}
+// .footerHR{
+//   width: 80%;
+//   margin: auto;
+//   border-top: 4px solid $info ; // remove default border
+//   opacity: 1; //color was faded out for some reason
+// }
 .footbtn, .sendbtn{
   padding-left: 20px;
   padding-right: 20px;
