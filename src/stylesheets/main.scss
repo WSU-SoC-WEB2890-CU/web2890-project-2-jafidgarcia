@@ -29,6 +29,7 @@ $accordion-button-focus-box-shadow:       transparent;
 /* Your styles go here */
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
 // @import "~@fortawesome/fontawesome-free/css/all.css";
 
 // .navbar{
@@ -45,12 +46,16 @@ html{
   // background-color: black !important;
 }
 .oswaldReg{
-  Font-Family: 'Oswald', Sans-Serif;
-  Font-Size: 3rem;
+  font-Family: 'Oswald', Sans-Serif;
+  font-Size: 3rem;
 }
 .quattroReg{
   Font-Family: 'Quattrocento', Serif;
   Font-Size: 1.1rem;
+}
+.logoFont{
+  // shadows into light two
+  font-family: 'Shadows Into Light Two', cursive;
 }
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
@@ -309,6 +314,18 @@ position: relative;
 // .accordion-button::after {
 //   color: red!important;
 // }
+
+
+/////////////////////////////////////////
+// Contact Section
+.contactForm{
+  padding-left: 100px;
+  padding-right: 100px;
+  @media(max-width: 668px){
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
 
 
 /////////////////////////////////////////
