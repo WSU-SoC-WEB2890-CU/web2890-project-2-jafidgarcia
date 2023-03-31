@@ -313,18 +313,18 @@ position: relative;
 
 /////////////////////////////////////////
 // Footer Section
-.footer > *{
-  border: solid 1px $danger;
-}
+// .footer > *{
+//   border: solid 1px $danger;
+// }
 .footer{
   margin-bottom: auto;
 }
-// .footerHR{
-//   width: 80%;
-//   margin: auto;
-//   border-top: 4px solid $info ; // remove default border
-//   opacity: 1; //color was faded out for some reason
-// }
+.footerHR{
+  width: 80%;
+  margin: auto;
+  border-top: 4px solid $info ; // remove default border
+  opacity: 1; //color was faded out for some reason
+}
 .footbtn, .sendbtn{
   padding-left: 20px;
   padding-right: 20px;
@@ -605,4 +605,10 @@ body {
 }
 .fade-in.show {
   opacity: 1;
+}
+.footerHR{
+  width: 80%;
+  margin: auto;
+  border-top: 4px solid $info ; // remove default border
+  opacity: 1; //color was faded out for some reason
 }

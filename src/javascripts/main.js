@@ -5,21 +5,21 @@ import * as fontawesome from "@fortawesome/fontawesome-free/js/all"
 console.log("testing");
 ///////////////////////////////////////////////////////////////////////
 // this loop should stop video after 2 loops but it is not working 
-const video = document.getElementById("mobileVideo");
-var loopCount = 0;
-video.addEventListener("ended", function() {
-  console.log("ended event listener worked");
-  loopCount++;
-  if (loopCount > 2) {
-    video.pause();
-    console.log("Pause has been triggered");
-  } 
-  // else {
-  //   video.pause();
-  //   video.currentTime = 0;
-  //   console.log("Pause has been triggered");
-  // }
-});
+// const video = document.getElementById("mobileVideo");
+// var loopCount = 0;
+// video.addEventListener("ended", function() {
+//   console.log("ended event listener worked");
+//   loopCount++;
+//   if (loopCount > 2) {
+//     video.pause();
+//     console.log("Pause has been triggered");
+//   } 
+//   // else {
+//   //   video.pause();
+//   //   video.currentTime = 0;
+//   //   console.log("Pause has been triggered");
+//   // }
+// });
 ///////////////////////////////////////////////////////////////////////
 var videos = document.querySelectorAll("video");
   
